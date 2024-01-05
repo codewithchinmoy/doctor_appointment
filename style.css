@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #2b303a;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#395c6b, #313e50);
+    color: white;
+}
+
+form table, form th, form td {
+    border-collapse: collapse;
+    border: 1px solid #313e50;
+    margin: 1rem;
+}
+
+form th {
+    text-align: right;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    font-size: 100%;
+    width: 20rem;
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    font-size: 100%;
+    background: linear-gradient(#395c6b, #313e50);
+    color: white;
+    padding: 0.25rem 1rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+}
+
+.btn:hover, .btn:active {
+    box-shadow: 0.25rem 0.25rem 0.5rem #313e5066;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li {
+    width: 20rem;
+    background-color: #fffeea;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #2b303a;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem #313e5066;
+}
+
+li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.badge {
+    font-size: 200%;
+}
+
+.delete-btn {
+    all: unset;
+    cursor: pointer;
+    font-size: 75%;
+    background-color: darkred;
+    color: white;
+    margin: 0;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.delete-btn:hover, .delete-btn:active {
+    box-shadow: 0.1rem 0.1rem 0.25rem #313e5066;
+}

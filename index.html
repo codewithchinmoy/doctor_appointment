@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <header>
+        <h1>Doctor Appointment</h1>
+    </header>
+
+    <h2>Register New Patient</h2>
+
+    <form id="register-patient-form">
+        <table>
+            <tr>
+                <th><label for="name">Name:</label></th>
+                <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+                <th><label for="dob">Date of Birth:</label></th>
+                <td><input type="date" id="dob" required></td>
+            </tr>
+            <tr>
+                <th><label for="type-select">Type:</label></th>
+                <td>
+                    <select name="type" id="type-select" required>
+                        <option value="">Required</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="contact">Contact Tel:</label></th>
+                <td><input type="tel" id="contact" required></td>
+            </tr>
+            <tr>
+                <th><label for="notes">Treatment Notes:</label></th>
+                <td><textarea name="notes" id="notes"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="doctor-select">Doctor Assigned:</label></th>
+                <td>
+                    <select name="doctor" id="doctor-select" required>
+                        <option value="">Required</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input class="btn" type="submit" value="Register Patient">
+    </form>
+
+    <h2>Registered Patient</h2>
+    
+    <button id="clear-register-button" class="btn">Clear Register</button>
+
+    <ul id="register"></ul>
+
+</body>
+</html>
